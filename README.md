@@ -1,17 +1,15 @@
-phonegap-plugin-brightness
+cordova-plugin-brightness
 ==========================
 
-A phonegap 3.x plugin for brightness control within android and ios.
+A cordova plugin for brightness control within android and ios.
 Also recently I have added the function for keep screen on.
 
 Installing
 ======
-You may use phonegap CLI as follows:
+You may use cordova CLI as follows:
 
 <pre>
-➜ phonegap local plugin add https://github.com/fiscal-cliff/phonegap-plugin-brightness.git
-[phonegap] adding the plugin: https://github.com/fiscal-cliff/phonegap-plugin-brightness.git
-[phonegap] successfully added the plugin
+cordova plugin add https://github.com/fiscal-cliff/phonegap-plugin-brightness.git
 </pre>
 
 Using
