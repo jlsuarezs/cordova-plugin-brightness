@@ -1,5 +1,6 @@
  /*
- * @author Evgeniy Lukovsky
+ * @author Evgeniy Lukovsky 
+ * 
  * */
 
 	var exec = require('cordova/exec');
