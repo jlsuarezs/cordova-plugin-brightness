@@ -9,7 +9,7 @@ Installing
 You may use cordova CLI as follows:
 
 <pre>
-cordova plugin add https://github.com/fiscal-cliff/phonegap-plugin-brightness.git
+cordova plugin add https://github.com/jlsuarezs/cordova-plugin-brightness.git
 </pre>
 
 Using
