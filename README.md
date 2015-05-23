@@ -4,6 +4,8 @@ cordova-plugin-brightness
 A cordova plugin for brightness control within android and ios.
 Also recently I have added the function for keep screen on.
 
+Thank you @Evgeniy Lukovsky - Updated!
+
 Installing
 ======
 You may use cordova CLI as follows:
