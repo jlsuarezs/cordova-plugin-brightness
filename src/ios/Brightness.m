@@ -10,6 +10,8 @@
 
 - (void)getBrightness:(CDVInvokedUrlCommand *)command
 {
+    NSLog(@"getBrightness");
+
     CDVPluginResult * pluginResult = nil;
     float brightness = [UIScreen mainScreen].brightness;
     NSString *result = [NSString stringWithFormat:@"%f", brightness];
@@ -19,6 +21,8 @@
 
 - (void)setBrightness:(CDVInvokedUrlCommand *)command
 {
+    NSLog(@"setBrightness");
+
     CDVPluginResult * pluginResult = nil;
     NSString *value = [command.arguments objectAtIndex:0];
     float brightness = [value floatValue];
@@ -29,6 +33,8 @@
 
 -(void)setKeepScreenOn:(CDVInvokedUrlCommand *)command
 {
+    NSLog(@"setKeepScreenOn");
+     
     CDVPluginResult* pluginResult = nil;
     BOOL value = [[command.arguments objectAtIndex:0] boolValue];
     [UIApplication sharedApplication].idleTimerDisabled = value;
