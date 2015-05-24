@@ -25,4 +25,4 @@ Brightness.setKeepScreenOn = function(value, successCallback, errorCallback)
 	exec(successCallback, errorCallback, "Brightness", "setKeepScreenOn", [value]);
 };
 
-module.exports= Brightness;
+module.exports = Brightness;
