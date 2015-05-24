@@ -1,5 +1,5 @@
  /*
- * @author Evgeniy Lukovsky 
+ * @author Evgeniy Lukovsky updated by jlsuarez 
  * 
  * */
 
@@ -8,20 +8,19 @@
 	var Brightness=function(){
 	};
 
-	Brightness.prototype.getBrightness = function( successCallback, errorCallback) 
+	Brightness.getBrightness = function(successCallback, errorCallback) 
 	{
-		return cordova.exec(successCallback, errorCallback, "Brightness", "getBrightness", []);
+		exec(successCallback, errorCallback, "Brightness", "getBrightness", []);
 	};
 
-	Brightness.prototype.setBrightness = function(value, successCallback, errorCallback) 
+	Brightness.setBrightness = function(value, successCallback, errorCallback) 
 	{
-		return cordova.exec(successCallback, errorCallback, "Brightness", "setBrightness", [value]);
+		exec(successCallback, errorCallback, "Brightness", "setBrightness", [value]);
 	};
 
-	Brightness.prototype.setKeepScreenOn = function(value, successCallback, errorCallback) 
+	Brightness.setKeepScreenOn = function(value, successCallback, errorCallback) 
 	{
-		return cordova.exec(successCallback, errorCallback, "Brightness", "setKeepScreenOn", [value]);
+		exec(successCallback, errorCallback, "Brightness", "setKeepScreenOn", [value]);
 	};
 
-	module.exports= new Brightness();
-
+	module.exports= Brightness;
