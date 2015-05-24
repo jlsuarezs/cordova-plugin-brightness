@@ -3,24 +3,26 @@
  * 
  * */
 
-	var exec = require('cordova/exec');
+var argscheck = require('cordova/argscheck'),
+utils = require('cordova/utils'),
+exec = require('cordova/exec');
 
-	var Brightness=function(){
-	};
+var Brightness=function(){
+};
 
-	Brightness.getBrightness = function(successCallback, errorCallback) 
-	{
-		exec(successCallback, errorCallback, "Brightness", "getBrightness", []);
-	};
+Brightness.getBrightness = function(successCallback, errorCallback) 
+{
+	exec(successCallback, errorCallback, "Brightness", "getBrightness", []);
+};
 
-	Brightness.setBrightness = function(value, successCallback, errorCallback) 
-	{
-		exec(successCallback, errorCallback, "Brightness", "setBrightness", [value]);
-	};
+Brightness.setBrightness = function(value, successCallback, errorCallback) 
+{
+	exec(successCallback, errorCallback, "Brightness", "setBrightness", [value]);
+};
 
-	Brightness.setKeepScreenOn = function(value, successCallback, errorCallback) 
-	{
-		exec(successCallback, errorCallback, "Brightness", "setKeepScreenOn", [value]);
-	};
+Brightness.setKeepScreenOn = function(value, successCallback, errorCallback) 
+{
+	exec(successCallback, errorCallback, "Brightness", "setKeepScreenOn", [value]);
+};
 
-	module.exports= Brightness;
+module.exports= Brightness;
