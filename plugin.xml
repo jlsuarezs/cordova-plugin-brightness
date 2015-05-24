@@ -14,8 +14,8 @@
 		This plugin gives you the ability to get and set the screen brightness
 	</description>
 	
-    <js-module src="www/brightness.js" name="Brightness">
-        <clobbers target="cordova.plugins.brightness" />
+    <js-module src="www/brightness.js" name="brightness">
+        <clobbers target="cordova.plugins.Brightness" />
     </js-module>
     
 	<info>
