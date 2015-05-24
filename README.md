@@ -19,29 +19,12 @@ Using
 The code below can be placed into script tag.
 
 ```javascript
-		document.addEventListener('deviceready', onDeviceReady);
-		function onDeviceReady() {
-			window.brightness = cordova.require("cordova.plugin.Brightness.Brightness");
+		if (window.cordova.plugins.Brightness) {
+		      // set Brightness
+		      window.cordova.plugins.Brightness.setBrightness(0.3);
+		      // prevents sleep
+		      window.cordova.plugins.Brightness.setKeepScreenOn(true);
+		      // returns normal behavior
+		      window.cordova.plugins.Brightness.setKeepScreenOn(false);
 		}
-		function setBrightness(value) {
-			brightness.setBrightness(value, win, fail);
-		}
-		function getBrightness() {
-			brightness.getBrightness( win, fail);
-		}
-		function win(status) {
-			alert('Message: ' + status);
-		}
-		function fail(status) {
-			alert('Error: ' + status);
-		}
-```
-
-You may also prevent a sleep (or keep screen on).
-
-```javascript
-		// prevents sleep
-		brightness.setKeepScreenOn(true);
-		// returns normal behavior
-		pluginService.brightness.setKeepScreenOn(false);
 ```
